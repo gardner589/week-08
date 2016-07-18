@@ -14,7 +14,7 @@ Instantiate a new Angular module called `BlogPost` that takes `ui.router` as a d
 
 **Your answer:**
 ```js
-
+angular.module('BlogPost',['ui.router']);
 ```
 
 ## Question 2
@@ -30,7 +30,7 @@ Which *one* of the following buttons would *not* be displayed?
 ```html
 [ ] A: <button data-ng-if="status">Click</button>
 [ ] B: <button data-ng-show="status">Click</button>
-[ ] C: <button data-ng-hide="status">Click</button>
+[x] C: <button data-ng-hide="status">Click</button>
 [ ] D: <button>{{status}}</button>
 ```
 
@@ -44,7 +44,7 @@ One button below has an `ng-click` attribute; the other has `data-ng-click` inst
 ```
 
 **Your answer:**
-
+Putting 'data-' in front makes the attribute "Valid HTML"
 > ...
 
 ## Question 4
@@ -52,7 +52,7 @@ One button below has an `ng-click` attribute; the other has `data-ng-click` inst
 Which of the following demonstrates the best usage of `ng-app`? **Explain your answer.**
 
 **Your answer:**
-
+I think it is 'A' because the other 2 dont cover the scope of the html DOM
 > ...
 
 ### A:
@@ -72,7 +72,7 @@ Which of the following demonstrates the best usage of `ng-app`? **Explain your a
 ### B:
 ```html
 <!DOCTYPE html>
-<html> 
+<html>
   <head data-ng-app="myapp">
     <title>My app</title>
   </head>
@@ -86,7 +86,7 @@ Which of the following demonstrates the best usage of `ng-app`? **Explain your a
 ### C:
 ```html
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <title>My app</title>
   </head>
@@ -106,7 +106,7 @@ Which one of the following concepts does this best illustrate?
 ```
 [ ] A: Modularity
 [ ] B: MVC
-[ ] C: Two-way data-binding
+[x] C: Two-way data-binding
 [ ] D: Separation of concerns
 ```
 
@@ -115,7 +115,7 @@ Which one of the following concepts does this best illustrate?
 What is an IIFE, and why might you use it?
 
 **Your answer:**
-
+Immediately Invoked Function Expression. Variables used inside do not pollute the global namespace.
 > ...
 
 ## Question 7
@@ -123,7 +123,7 @@ What is an IIFE, and why might you use it?
 What is the `ui-sref` directive, and how is it used?
 
 **Your answer:**
-
+ui-sref is used to link to another view.
 > ...
 
 ## Question 8
@@ -131,7 +131,7 @@ What is the `ui-sref` directive, and how is it used?
 One of the lines of code in the following snippet will throw an error. Which one is it, and why?
 
 **Your answer:**
-
+lines 4 through 7 do not have a '{}' after the condition of the 'if' statement.
 > ...
 
 ```js
@@ -212,4 +212,3 @@ Of the three following options, which is the most "correct" way of organizing th
   songs/
     form.html
 ```
-
